@@ -1,9 +1,10 @@
 import React from 'react'
 import "./ProductComponent.css"
-
+import { Heading } from '../Heading/Heading'
 const ProductComponent = () => {
     return (
         <>
+            <Heading heading = "Features Product" />
             <div className='product__main__container'>
                 <div className='product__main'>
                     <div className='product__main__image'>

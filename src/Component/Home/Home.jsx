@@ -24,7 +24,7 @@ const Home = () => {
           <img src='images/home.png' alt='homebg' className='home__main__container__right-img' /></div>
       </div>
 
-      <Heading heading = "Features Product" />
+      {/* <Heading heading = "Features Product" /> */}
      
 
     </>
