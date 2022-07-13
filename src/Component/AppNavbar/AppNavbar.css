@@ -1,0 +1,13 @@
+.navbarColor{
+    background-color: var(--white) !important;
+}
+.searchBtn{
+    padding: 0px 30px !important;
+    border: 1px solid var(--light-purple) !important;
+    color: var(--black) !important;
+}
+.searchBtn:hover{
+    background-color: var(--light-purple) !important;
+    border: none !important;
+    color: var(--white) !important;
+}
