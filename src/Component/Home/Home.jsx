@@ -1,6 +1,9 @@
 import React from 'react'
 import "./Home.css"
 import AppButton from '../AppButton/AppButton'
+import { Heading } from '../Heading/Heading'
+import { ProductComponent } from '../ProductComponent/ProductComponent'
+
 
 
 const Home = () => {
@@ -21,6 +24,8 @@ const Home = () => {
           <img src='images/home.png' alt='homebg' className='home__main__container__right-img' /></div>
       </div>
 
+      <Heading heading = "Features Product" />
+     
 
     </>
   )
