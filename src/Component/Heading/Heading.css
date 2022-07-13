@@ -1,0 +1,12 @@
+.Heading{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+.Heading-h1{
+    font-size: 1.7rem;
+    border-bottom: 3px solid var(--light-purple);
+    text-align: center;
+    align-items: center;
+    color: var(--black);
+}

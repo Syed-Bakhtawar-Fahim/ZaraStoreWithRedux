@@ -1,6 +1,6 @@
 .home__button{
     padding: 8px 3px;
-    background-color: #cf6ba9;
+    background-color: var(--btn-color);
     width: 30%;
     align-items: center;
     text-align: center;
@@ -11,7 +11,7 @@
 .home__button:hover{
     background-color: var(--white);
     transition: .2s ease-in;
-    border: 1px solid #cf6ba9;
+    border: 1px solid var(--btn-color);
     color: #333;
 }
 
