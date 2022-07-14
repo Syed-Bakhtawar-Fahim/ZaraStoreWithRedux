@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ZaraStoreWithRedux/static/css/main.6326d43f.css",
+    "main.js": "/ZaraStoreWithRedux/static/js/main.6dbbb7fa.js",
+    "index.html": "/ZaraStoreWithRedux/index.html",
+    "main.6326d43f.css.map": "/ZaraStoreWithRedux/static/css/main.6326d43f.css.map",
+    "main.6dbbb7fa.js.map": "/ZaraStoreWithRedux/static/js/main.6dbbb7fa.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6326d43f.css",
+    "static/js/main.6dbbb7fa.js"
+  ]
+}
