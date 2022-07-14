@@ -28,7 +28,7 @@ const ProductComponent = () => {
     })
     return (
         <>
-            {renderList}
+            {products.length === 0 ? <h1>Loading the products...</h1> : renderList }
 
         </>
     )
