@@ -17,7 +17,7 @@ const Home = () => {
             <h1 className='home__main__container-mainHeading'>Lastest Fashion Sale</h1>
             <h3 className='home__main__container-priceHeading'>Starting at <span>$20.00</span></h3>
           </div>
-          <AppButton />
+          <AppButton title = "Shop Now" />
         </div>
 
         <div className='home__main__container__right'>

@@ -2,11 +2,11 @@ import React from 'react'
 import "./AppButton.css"
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 
-const AppButton = () => {
+const AppButton = (props) => {
   return (
     <>
         <div className='home__button'>
-            Shop Now <AiOutlineShoppingCart/>
+            {props.title} <AiOutlineShoppingCart/>
         </div>
     </>
   )

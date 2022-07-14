@@ -17,8 +17,16 @@
 
 @media screen and (max-width:320px) {
     .home__button{
-        font-size: .8rem;
+        font-size: .7rem;
         display: flex;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768px) {
+    .home__button{
+        font-size: .7rem;
+        display: flex;
+        width: 32%;
         justify-content: center;
     }
 }
