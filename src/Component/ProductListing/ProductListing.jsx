@@ -1,98 +1,44 @@
-import React from 'react'
-import { Button } from 'react-bootstrap'
-import AppButton from '../AppButton/AppButton'
+import React, {useState, useEffect} from 'react'
+import {useSelector, useDispatch} from 'react-redux'
+import axios from 'axios'
+import { setProducts } from '../../redux/actions/productActions'
+import ProductComponent from '../ProductComponent/ProductComponent'
 import "./ProductListing.css"
-export const ProductListing = () => {
+import { Heading } from '../Heading/Heading'
+
+const ProductListing = () => {
+    const [loader, setLoader] = useState(false)
+    const [errorHandling, setErrorHandling] = useState(false)
+    const products = useSelector((state) => state)
+    const dispatch = useDispatch()
+
+
+
+    useEffect(() => {
+        const fetchProducts = async () => {
+            setLoader(true)
+            const response = await axios.get("https://fakestoreapi.com/products")
+                .catch((err) => {
+                    console.log("err", err)
+                    setErrorHandling(true)
+                })
+            setLoader(false)
+            dispatch(setProducts(response.data))
+        }
+        fetchProducts()
+    }, [dispatch])
+ 
+
+
+
     return (
-        <>
-            <div className="product-featured">
-
-                <div className="showcase-wrapper has-scrollbar">
-
-                    <div className="showcase-container">
-
-                        <div className="showcase">
-
-                            <div className="showcase-banner">
-                                <img src="images/jew.jpg" alt="shampoo, conditioner & facewash packs" className="showcase-img" />
-                            </div>
-
-                            <div className="showcase-content">
-
-                                <a href="#">
-                                    <h3 className="showcase-title">shampoo, conditioner & facewash packs</h3>
-                                </a>
-
-                                <p className="showcase-desc">
-                                    Lorem ipsum dolor sit amet consectetur Lorem ipsum
-                                    dolor dolor sit amet consectetur Lorem ipsum dolor
-                                </p>
-
-                                <div className="price-box">
-                                    <p className="price">$150.00</p>
-
-                                    <del>$200.00</del>
-                                </div>
-
-                                {/* <button className="add-cart-btn">add to cart</button> */}
-                                <AppButton title = "Add to Cart" />
-
-                                <div className="showcase-status">
-                                    <div className="wrapper">
-                                        <p>
-                                            already sold: <b>20</b>
-                                        </p>
-
-                                        <p>
-                                            available: <b>40</b>
-                                        </p>
-                                    </div>
-
-                                    <div className="showcase-status-bar"></div>
-                                </div>
-
-                                <div className="countdown-box">
-
-                                    <p className="countdown-desc">
-                                        Hurry Up! Offer ends in:
-                                    </p>
-
-                                    <div className="countdown">
-
-                                        <div className="countdown-content">
-
-                                            <p className="display-number">360</p>
-
-                                            <p className="display-text">Days</p>
-
-                                        </div>
-
-                                        <div className="countdown-content">
-                                            <p className="display-number">24</p>
-                                            <p className="display-text">Hours</p>
-                                        </div>
-
-                                        <div className="countdown-content">
-                                            <p className="display-number">59</p>
-                                            <p className="display-text">Min</p>
-                                        </div>
-
-                                        <div className="countdown-content">
-                                            <p className="display-number">00</p>
-                                            <p className="display-text">Sec</p>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </>
+       <>
+        <Heading heading="Features Product" />  
+        <div className='product__listing__container'>
+            <ProductComponent />
+        </div>
+       </>
     )
 }
+
+export default ProductListing

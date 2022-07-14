@@ -1,3 +1,10 @@
+.navbar__logo{
+    text-decoration: none;
+    list-style: none;
+    color: var(--light-purple);
+    font-weight: bold;
+    
+}
 .navbarColor{
     background-color: var(--white) !important;
 }

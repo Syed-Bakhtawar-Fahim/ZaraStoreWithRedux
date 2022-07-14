@@ -1,12 +1,14 @@
 import React from 'react'
 import { Navbar, Container, Nav, Form, NavDropdown, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import "./AppNavbar.css"
 
 const AppNavbar = () => {
   return(
     <Navbar expand="lg" className = "navbarColor">
       <Container fluid>
-        <Navbar.Brand href="#">Zara Shopping Store</Navbar.Brand>
+      <Link to = "/" className='navbar__logo'>Zara Shopping Store</Link>
+        
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
