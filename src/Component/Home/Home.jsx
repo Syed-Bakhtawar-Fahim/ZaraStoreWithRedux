@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Home.css"
 import AppButton from '../AppButton/AppButton'
-import { Heading } from '../Heading/Heading'
 import ProductListing  from "../ProductListing/ProductListing"
 
 
