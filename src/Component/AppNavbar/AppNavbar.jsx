@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Container, Nav, Form, NavDropdown, Button } from 'react-bootstrap'
+import { Navbar, Container, Nav, Form,  Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import "./AppNavbar.css"
 
@@ -21,20 +21,6 @@ const AppNavbar = () => {
             <Link to="/" className='NavUl'>Women's</Link>
             <Link to="/" className='NavUl'>Kid's</Link>
             
-            
-            <NavDropdown title="Category" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Pants</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
-                T-Shirts
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Shirts
-              </NavDropdown.Item>
-              <NavDropdown.Item href="#action5">
-                Pant Coat
-              </NavDropdown.Item>
-            </NavDropdown>
           </Nav>
           <Form className="d-flex">
             <Form.Control

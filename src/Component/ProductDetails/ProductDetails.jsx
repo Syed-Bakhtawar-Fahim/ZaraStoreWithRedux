@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import { Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import { selectedProducts, removeSelectedProducts } from '../../redux/actions/productActions'
@@ -9,7 +8,7 @@ import axios from "axios";
 
 const ProductDetails = () => {
     const product = useSelector((state) => state.product)
-    const { image, price, title, category, description } = product
+    const { image, price, title, description } = product
     const { productId } = useParams()
     const dispatch = useDispatch()
     // console.log(product)
@@ -49,9 +48,9 @@ const ProductDetails = () => {
 
                                 <div className="showcase-content">
 
-                                    <a href="#">
+                                   
                                         <h3 className="showcase-title">{title}</h3>
-                                    </a>
+                                   
 
                                     <p className="showcase-desc">
                                         {description}

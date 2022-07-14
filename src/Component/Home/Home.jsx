@@ -1,7 +1,6 @@
 import React from 'react'
 import "./Home.css"
 import AppButton from '../AppButton/AppButton'
-import { Heading } from '../Heading/Heading'
 import ProductListing  from "../ProductListing/ProductListing"
 
 
@@ -21,7 +20,7 @@ const Home = () => {
         </div>
 
         <div className='home__main__container__right'>
-          <img src='images/home.png' alt='homebg' className='home__main__container__right-img' /></div>
+          <img src = 'images/home.png' alt='homebg' className='home__main__container__right-img' /></div>
       </div>
       <ProductListing />
      

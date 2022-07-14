@@ -1,9 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import "./ProductComponent.css"
-import { Heading } from '../Heading/Heading'
-import { useSelector, useDispatch } from 'react-redux'
-import axios from 'axios'
-import { setProducts } from '../../redux/actions/productActions'
+import { useSelector} from 'react-redux'
 import { Link } from 'react-router-dom'
 const ProductComponent = () => {
     const products = useSelector((state) => state.allProducts.products)
@@ -13,7 +10,7 @@ const ProductComponent = () => {
             <Link to={`/product/${id}`} className = "link" key={id}>
                 <div className='product__main' >
                     <div className='product__main__image'>
-                        <img src={image} alt='image' className='product__main__image-img' />
+                        <img src = {image} alt='productimage' className='product__main__image-img' />
                     </div>
                     <div className='product__main__detail' >
                         {/* <p className='product__main__detail-category' >{i}</p> */}

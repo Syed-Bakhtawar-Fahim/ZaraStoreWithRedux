@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useEffect} from 'react'
 import {useSelector, useDispatch} from 'react-redux'
 import axios from 'axios'
 import { setProducts } from '../../redux/actions/productActions'
@@ -7,8 +7,8 @@ import "./ProductListing.css"
 import { Heading } from '../Heading/Heading'
 
 const ProductListing = () => {
-    const [loader, setLoader] = useState(false)
-    const [errorHandling, setErrorHandling] = useState(false)
+    // const [loader, setLoader] = useState(false)
+    // const [errorHandling, setErrorHandling] = useState(false)
     const products = useSelector((state) => state)
     const dispatch = useDispatch()
 
@@ -16,13 +16,13 @@ const ProductListing = () => {
 
     useEffect(() => {
         const fetchProducts = async () => {
-            setLoader(true)
+            // setLoader(true)
             const response = await axios.get("https://fakestoreapi.com/products")
                 .catch((err) => {
                     console.log("err", err)
-                    setErrorHandling(true)
+                    // setErrorHandling(true)
                 })
-            setLoader(false)
+            // setLoader(false)
             dispatch(setProducts(response.data))
         }
         fetchProducts()
