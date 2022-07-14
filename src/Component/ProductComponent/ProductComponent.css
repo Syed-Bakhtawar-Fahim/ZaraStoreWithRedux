@@ -10,6 +10,7 @@
     flex: 1 0 1;
     flex-wrap: wrap;
     margin: 10px 40px ;
+    
    
    
 }
@@ -28,6 +29,7 @@
     border: 1px solid var(--cultured);
     text-decoration: none;
     list-style: none;
+    height: 350px;
 }
 .product__main:hover{
     border: 1px solid var(--btn-color);

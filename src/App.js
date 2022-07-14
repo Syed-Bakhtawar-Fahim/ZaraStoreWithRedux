@@ -18,12 +18,11 @@ function App() {
         <Route path='product/:productId' element={<ProductDetails />} />
       </Routes>
       {/* <ProductComponent /> */}
-      <ProductListing />
+     
       {/* <ProductDetails /> */}
       <Footer />
     </>
   );
 }
-{/* <Home /> */}
 
 export default App;

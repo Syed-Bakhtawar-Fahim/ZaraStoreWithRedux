@@ -5,6 +5,21 @@
     font-weight: bold;
     
 }
+.navbar__logo:hover{
+    color: var(--black);
+}
+.NavUl
+{
+  margin: 5px 0px;
+  padding: 3px 15px;
+  text-decoration: none;
+  color: #333; 
+}
+.NavUl:hover
+{
+ color: var(--light-purple); 
+ font-weight: bold;
+}
 .navbarColor{
     background-color: var(--white) !important;
 }

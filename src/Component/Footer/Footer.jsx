@@ -2,7 +2,11 @@
 import "./Footer.css"
 const Footer = () => {
   return(
-    Footer
+    <>
+      <div className="footer">
+        <div>&copy;	Zara Shopping Store</div>
+      </div>
+    </>
   )
 }
 

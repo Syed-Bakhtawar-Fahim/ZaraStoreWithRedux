@@ -34,9 +34,11 @@ const ProductListing = () => {
     return (
        <>
         <Heading heading="Features Product" />  
-        <div className='product__listing__container'>
+        {
+            products.length === 0 ?  <h1>Loading</h1> : <div className='product__listing__container'>
             <ProductComponent />
         </div>
+        }
        </>
     )
 }

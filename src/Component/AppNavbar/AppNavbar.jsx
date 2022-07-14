@@ -16,10 +16,11 @@ const AppNavbar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Men's</Nav.Link>
-            <Nav.Link href="#action2">Women's</Nav.Link>
-            <Nav.Link href="#action2">Kid's</Nav.Link>
+            <Link to="/" className='NavUl'>Home</Link>
+            <Link to="/" className='NavUl'>Men's</Link>
+            <Link to="/" className='NavUl'>Women's</Link>
+            <Link to="/" className='NavUl'>Kid's</Link>
+            
             
             <NavDropdown title="Category" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Pants</NavDropdown.Item>
